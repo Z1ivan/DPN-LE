@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+outputs/
+output_*/
+
+# Large model files
+*.safetensors
+*.bin
+
+# Generated steering data and activation caches are not included in the release
+data/steering_data/*/
+!data/steering_data/README.md
+
+# Optional datasets
+data/gsm8k_test.json
+data/hotpotqa_test.json
+data/triviaqa_test.json
+
+# Experiment tracking
+wandb/
